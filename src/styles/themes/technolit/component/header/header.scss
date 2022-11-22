@@ -1,0 +1,25 @@
+.header {
+  //   font-size: 20px;
+}
+.logo {
+  background: $logo left no-repeat;
+}
+header::before {
+  background-color: $CORPORATE-PRIMARY;
+  height: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.main-navigation .main-navigation-list a {
+  color: $CORPORATE-PRIMARY;
+}
