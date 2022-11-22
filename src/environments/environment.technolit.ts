@@ -4,7 +4,7 @@ import { ENVIRONMENT_DEFAULTS, Environment } from './environment.model';
 export const environment: Environment = {
   ...ENVIRONMENT_DEFAULTS,
 
-  icmChannel: 'inSPIRED-inTRONICS_Business-Site',
+  icmChannel: 'TECHNOLIT-TECHNOLIT_DE-Site',
 
   themeColor: '#688dc3',
 
