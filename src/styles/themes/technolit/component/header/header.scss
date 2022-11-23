@@ -2,7 +2,15 @@
   //   font-size: 20px;
 }
 .logo {
-  background: $logo left no-repeat;
+  background: url(../../../../../assets/themes/b2b/img/logo_de.svg) left no-repeat;
+  width: 178px;
+  height: 50px;
+  background-size: contain;
+}
+
+.header-search-container input.form-control {
+  background-color: $white;
+  border: 2px solid $border-color-light;
 }
 header::before {
   background-color: $CORPORATE-PRIMARY;
@@ -20,6 +28,79 @@ h6,
 .h4,
 .h5,
 .h6,
-.main-navigation .main-navigation-list a {
+.main-navigation .main-navigation-list a,
+.fa-magnifying-glass {
   color: $CORPORATE-PRIMARY;
+}
+
+.main-navigation {
+  height: 50px;
+  border-top: solid 1px #0000001a;
+  border-bottom: solid 1px #0000001a;
+}
+
+.user-links li {
+  padding: 4px;
+  &:hover {
+    background: $text-color-quinary;
+  }
+}
+.my-account-login {
+  span {
+    font-size: 8px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: $text-color-quaternary;
+  }
+}
+.quick-cart-link {
+  background: none;
+  margin: 0;
+  padding: 0;
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    &:hover {
+      background: $text-color-quinary;
+    }
+    span {
+      font-size: 8px;
+      text-transform: capitalize;
+      line-height: 20px;
+    }
+  }
+}
+ul.cms-menu {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  column-gap: 20px;
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+  text-transform: capitalize;
+  li:hover {
+    background: $text-color-quinary;
+  }
+}
+ul.main-navigation-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.main-navigation .main-navigation-list {
+  a {
+    // margin-right: 20px;
+    text-transform: capitalize;
+  }
+  li.dropdown {
+    padding-right: 20px;
+    line-height: 50px;
+    &:hover {
+      background: $text-color-quinary;
+    }
+  }
 }
