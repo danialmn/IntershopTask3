@@ -1,10 +1,17 @@
-.header {
-  //   font-size: 20px;
-}
 .logo {
   background: url(../../../../../assets/themes/b2b/img/logo_de.svg) left no-repeat;
   width: 178px;
   height: 50px;
+  background-size: contain;
+  @media (max-width: 991.98px) {
+    width: 110px;
+    height: 55px;
+  }
+}
+.mobile-logo {
+  background: url(../../../../../assets/themes/b2b/img/logo_de.svg) left no-repeat;
+  width: 110px;
+  height: 55px;
   background-size: contain;
 }
 
@@ -29,7 +36,19 @@ h6,
 .h5,
 .h6,
 .main-navigation .main-navigation-list a,
-.fa-magnifying-glass {
+.header-utility .search-toggler.active-search .ng-fa-icon {
+  color: $CORPORATE-PRIMARY;
+}
+// header search icon style
+a.search-toggler > fa-icon.header-icon {
+  svg {
+    color: $text-color-quaternary;
+    @media (max-width: 767.98px) {
+      color: $black;
+    }
+  }
+}
+button.btn-search > fa-icon > svg {
   color: $CORPORATE-PRIMARY;
 }
 
@@ -85,6 +104,9 @@ ul.cms-menu {
   li:hover {
     background: $text-color-quinary;
   }
+  @media (max-width: 767.98px) {
+    grid-auto-flow: row;
+  }
 }
 ul.main-navigation-list {
   display: flex;
@@ -93,7 +115,6 @@ ul.main-navigation-list {
 }
 .main-navigation .main-navigation-list {
   a {
-    // margin-right: 20px;
     text-transform: capitalize;
   }
   li.dropdown {
@@ -103,4 +124,17 @@ ul.main-navigation-list {
       background: $text-color-quinary;
     }
   }
+}
+// shopping basket number
+.item-count-container .badge {
+  left: 20px;
+  font-size: 45%;
+}
+// search box svg
+.header-utility .search-container .btn-search {
+  right: 0;
+}
+
+ul.main-navigation-list {
+  align-items: unset;
 }
